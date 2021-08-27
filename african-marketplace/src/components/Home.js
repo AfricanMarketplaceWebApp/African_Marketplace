@@ -16,6 +16,9 @@ function Home() {
               <button>
                 <a href="profile">Profile</a>
               </button>
+
+
+              
               <button>
                 <a href="/">Add Items</a>
               </button>
