@@ -1,0 +1,519 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid grey;
+}
+
+/*General  Styles*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background-color: #fefbff;
+}
+h2 {
+  font-size: 50px;
+}
+nav {
+  display: flex;
+  padding-right: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999; /*will make sure everything scrolls behind the nav*/
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(255, 167, 251);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(225, 0, 255);
+}
+header h2 {
+  color: purple;
+}
+.source {
+  margin: 20px;
+  padding-left: 20px;
+  padding: 10px;
+  display: flexbox;
+}
+.headingstyle {
+  display: flex;
+  justify-content: center;
+  border: 10px;
+  background-color: #fdeaff;
+}
+.headingstyle h2 {
+  text-align: center;
+}
+.organize {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.reorganize {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.allorganize {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+@media screen and (min-width: 480px) {
+  .beginning {
+    margin: 50px;
+  }
+}
+
+.boxOne {
+  background-image: url("./../images/Golden\ peach.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  display: block;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.thing {
+  display: flex;
+  background-color: pink;
+}
+
+.overlayPadding {
+  inset: 80px;
+}
+
+.boxOne h1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.centered {
+  border-block-color: black;
+  margin: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -2%);
+  font-size: 50px;
+  color: rgb(255, 244, 240);
+  outline: black;
+}
+.organize button {
+  line-height: 16px;
+  top: 150%;
+  position: center;
+  background-color: #e824fa; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+/*overlay*/
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+/*end of overlay styles*/
+.reorganize button {
+  line-height: 16px;
+  top: 150%;
+  position: center;
+  background-color: #e824fa; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+.body-begin img {
+  width: 1400px;
+  height: 800px;
+}
+
+.boxTwo {
+  background-image: url("./../images/african pattern.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+
+.boxThree {
+  background-image: url("./../images/peach gold.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxFour {
+  background-image: url("./../images/red and silver.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxFive {
+  background-image: url("./../images/Black dress.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxSix {
+  background-image: url("./../images/sliver dress.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+
+.boxSeven {
+  background-image: url("./../images/Ghana.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxEight {
+  background-image: url("./../images/inspiration.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxNine {
+  background-image: url("./../images/Orange.jpg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxTen {
+  background-image: url("./../images/Ankara.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxEleven {
+  background-image: url("./../images/Fashion.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxTwelve {
+  background-image: url("./../images/Pink.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.style {
+  display: flex;
+}
+
+.stylish {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+  .organize {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .style {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .reorganize {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .stylish {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.stylish button {
+  line-height: 16px;
+  top: 150%;
+  position: center;
+  background-color: #e824fa; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+.foot {
+  border: 10px;
+  margin-top: 20px;
+  padding: 100px;
+  background-color: #e7bceb;
+}
+
+.buticon {
+  padding: 8px;
+  font-size: small;
+}

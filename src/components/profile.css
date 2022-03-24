@@ -1,0 +1,192 @@
+.structure {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.restructure {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.structure button {
+  line-height: 16px;
+  top: 150%;
+  position: center;
+  background-color: #2b0053; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+.restructure button {
+  line-height: 16px;
+  top: 150%;
+  position: center;
+  background-color: #2b0053;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+.styles {
+  display: flex;
+}
+.stylishs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.stylishs button {
+  line-height: 16px;
+  top: 150%;
+  position: center;
+  background-color: #2b0053; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+.boxA {
+  background-image: url("./../images/south.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  display: block;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+
+.boxB {
+  background-image: url("./../images/Taylor\ Bankz.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+
+.boxC {
+  background-image: url("./../images/Blue.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxD {
+  background-image: url("./../images/Agbada.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxE {
+  background-image: url("./../images/Brown.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxF {
+  background-image: url("./../images/Burgundy.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxG {
+  background-image: url("./../images/Black\ African.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxH {
+  background-image: url("./../images/African.jpeg");
+  background-position: top; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxI {
+  background-image: url("./../images/traditional.jpeg");
+  background-position: top; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxJ {
+  background-image: url("./../images/Aso\ Oke.jpeg");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxK {
+  background-image: url("./../images/south.jpeg");
+  background-position: top; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
+.boxL {
+  background-image: url("./../images/Asoebi\ Styles.jpeg");
+  background-position: top; /* Center the image */
+  background-size: cover;
+  width: 400px;
+  line-height: 16px;
+  height: 450px;
+  padding: 10%;
+  margin: 20px;
+  display: block;
+}
