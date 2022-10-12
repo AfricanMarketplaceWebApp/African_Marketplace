@@ -30,7 +30,7 @@ function App() {
             <Men men={Men} />
           </Route>
           <Route path="/">
-            <Form Form={Form} />
+          <Women Women={Women} />
           </Route>
         </Switch>
       </Router>
