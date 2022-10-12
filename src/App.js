@@ -1,12 +1,9 @@
 import "./App.css";
-import ReactDOM from "react-dom";
 import Form from "./components/form";
 import Women from "./components/Women";
-import Login from "./components/LoginForm";
 import {
   Switch,
   Route,
-  Redirect,
   BrowserRouter as Router,
 } from "react-router-dom";
 import Men from "./components/men";

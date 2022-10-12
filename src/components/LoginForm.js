@@ -12,8 +12,8 @@ function LoginForm({ Login, error }) {
   const login = () => {
     console.log(details);
     if (
-      details.email == adminUser.email &&
-      details.password == adminUser.password
+      details.email === adminUser.email &&
+      details.password === adminUser.password
     ) {
       console.log("Logged in");
       setUser({
@@ -29,9 +29,9 @@ function LoginForm({ Login, error }) {
     login();
   };
 
-  const logout = () => {
-    console.log("Logout");
-  };
+  // const logout = () => {
+  //   console.log("Logout");
+  // };
 
   return (
     <div>

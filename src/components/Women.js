@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
-import { MdPermIdentity } from "react-icons/md";
 import "./Home.css";
-import LoginForm from "./LoginForm";
 import pic from "./../components/./../images/Influencer.png";
 import picture from "./../components/./../images/Golden peach.jpg";
 import image from "./../components/./../images/african pattern.jpg";
-import peachgold from "./../components/./../images/peach gold.jpg";
 function Women() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
