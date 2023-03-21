@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  body {
+    background-color: rgba(165, 42, 42, 0.541);
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
