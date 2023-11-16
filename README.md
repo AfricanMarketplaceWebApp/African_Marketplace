@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# African MarketPlace
+<img width="1508" alt="Screenshot 2023-11-16 at 11 57 58" src="https://github.com/AfricanMarketplaceWebApp/African_Marketplace/assets/69601432/281a9ebf-a31f-4df9-8d84-b3d79084fa2c">
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
